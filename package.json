@@ -11,6 +11,7 @@
     "node-static": "~0.6.7"
   },
   "scripts": {
+    "postinstall": "grunt build",
     "start": "grunt build && node server.js",
     "build": "grunt build",
     "watch": "stylus -w -u ./node_modules/nib -o public/css/ css"

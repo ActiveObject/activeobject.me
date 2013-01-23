@@ -1,0 +1,25 @@
+{
+  "name": "activeobject-resume",
+  "version": "0.1.0",
+  "author": "Vasyl Priymachuk <activeobject.ac@gmail.com>",
+  "private": true,
+  "dependencies": {
+    "stylus": "*",
+    "nib": "*",
+    "grunt": "0.3.x",
+    "grunt-contrib-stylus": "0.3.x",
+    "node-static": "~0.6.7"
+  },
+  "scripts": {
+    "start": "grunt build && node server.js",
+    "build": "grunt build",
+    "watch": "stylus -w -u ./node_modules/nib -o public/css/ css"
+  },
+  "devDependencies": {
+    "grunt-contrib-watch": "~0.1.4"
+  },
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  }
+}

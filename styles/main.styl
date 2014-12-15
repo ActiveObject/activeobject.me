@@ -59,6 +59,7 @@ header
   padding: 0 0 0 aside-padding
   font-family: PT Sans, Open Sans, sans-serif
   font-weight: 400
+  max-width: 700px
 
 .sub-section
   margin: 0.3em 0
@@ -104,6 +105,17 @@ header
 .actions a
   text-decoration: none
 
+.sub-section
+  page-break-inside: avoid
+
+.divider
+  margin: 30px
+
+.summary
+  margin-top: 20px
+  margin-bottom: 20px
+  font-family: 'Open Sans', sans-serif
+
 @media screen and (max-width: 880px)
   .actions
     right: auto
@@ -147,3 +159,6 @@ header
 
   .actions
     display: none
+
+  .summary
+    margin: 20px 40px

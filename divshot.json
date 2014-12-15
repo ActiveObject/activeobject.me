@@ -1,0 +1,6 @@
+{
+  "name": "ac-resume",
+  "root": "public",
+  "clean_urls": false,
+  "error_page": "error.html"
+}

@@ -7,7 +7,8 @@
     "postinstall": "grunt build",
     "start": "grunt build && node server.js",
     "build": "grunt build",
-    "watch": "stylus -w -u ./node_modules/nib -o public/css/ styles"
+    "watch": "stylus -w -u ./node_modules/nib -o public/css/ styles",
+    "deploy": "grunt build && divshot push production"
   },
   "dependencies": {
     "stylus": "*",
@@ -21,9 +22,5 @@
   "engines": {
     "node": "0.10.x",
     "npm": "1.2.x"
-  },
-  "scripts": {
-    "build": "grunt build",
-    "deploy": "grunt build && divshot push production"
   }
 }

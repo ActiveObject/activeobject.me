@@ -8,7 +8,8 @@
     "start": "grunt build && node server.js",
     "build": "grunt",
     "watch": "stylus -w -u ./node_modules/nib -o public/css/ styles",
-    "deploy": "grunt build && divshot push production"
+    "deploy-divshot": "grunt build && divshot push production",
+    "deploy": "git push do master"
   },
   "devDependencies": {
     "stylus": "*",

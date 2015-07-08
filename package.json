@@ -6,7 +6,7 @@
   "scripts": {
     "postinstall": "grunt build",
     "start": "grunt build && node server.js",
-    "build": "grunt build",
+    "build": "grunt",
     "watch": "stylus -w -u ./node_modules/nib -o public/css/ styles",
     "deploy": "grunt build && divshot push production"
   },

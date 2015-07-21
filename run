@@ -1,7 +1,0 @@
-#!/bin/sh
-
-PORT=5000 forever start -l ~/logs/resume.log \
- -o ~/logs/resume.out.log \
- -e ~/logs/resume.err.log \
- --append \
-server.js

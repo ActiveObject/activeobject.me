@@ -4,19 +4,18 @@
   "author": "Vasyl Priymachuk <activeobject.ac@gmail.com>",
   "private": true,
   "scripts": {
-    "postinstall": "grunt build",
-    "start": "grunt build && node server.js",
-    "build": "grunt",
     "watch": "stylus -w -u ./node_modules/nib -o public/css/ styles",
-    "deploy": "surge -p ./public -d activeobject.me"
+    "deploy": "surge -p ./public -d activeobject.me",
+    "start": "http-server -p 5008",
+    "makepdf": "node makepdf.js",
+    "build": "grunt stylus && npm run makepdf"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
-    "grunt-contrib-connect": "~0.3.0",
-    "grunt-contrib-stylus": "~0.5.0",
+    "grunt-cli": "^0.1.13",
     "grunt-contrib-watch": "~0.3.1",
+    "http-server": "^0.8.0",
     "nib": "*",
-    "node-static": "~0.6.9",
     "stylus": "*",
     "surge": "^0.14.3"
   },

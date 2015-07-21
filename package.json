@@ -1,7 +1,7 @@
 {
   "name": "activeobject-resume",
   "version": "0.1.0",
-  "author": "Vasyl Priymachuk <activeobject.ac@gmail.com>",
+  "author": "Vasyl Pryimachuk <activeobject.ac@gmail.com>",
   "private": true,
   "scripts": {
     "start": "http-server -p 5008",

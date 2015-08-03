@@ -7,24 +7,15 @@ body {
   font-family: Open Sans, sans-serif;
   font-weight: normal;
   font-size: 1em;
-  margin: 0;
+  margin: 0 auto;
   padding: 0 0 2em 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  width: 900px;
 }
 section {
   margin: 0 0 2em 0;
-}
-body:after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 300px;
-  height: 100%;
-  content: '';
-  background-color: #e2e2e9;
-  z-index: -1;
 }
 h1,
 h2,
@@ -132,9 +123,8 @@ header {
 @media print {
   body {
     padding: 0;
-  }
-  body:after {
-    display: none;
+    width: auto;
+    font-size: 0.8em;
   }
   section {
     margin: 0 0 1em 0;

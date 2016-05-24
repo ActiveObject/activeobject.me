@@ -5,16 +5,11 @@
   "private": true,
   "scripts": {
     "start": "http-server -p 5008",
-    "build": "npm run build-css && node makepdf.js",
-    "build-css": "stylus -u ./node_modules/nib -o public/css/ styles",
-    "watch": "stylus -w -u ./node_modules/nib -o public/css/ styles",
-    "predeploy": "npm run build",
+    "makepdf": "node makepdf.js",
     "deploy": "surge -p ./public -d activeobject.me"
   },
   "devDependencies": {
     "http-server": "^0.8.0",
-    "nib": "*",
-    "stylus": "*",
     "surge": "^0.18.0"
   }
 }

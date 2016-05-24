@@ -8,6 +8,7 @@
     "build": "npm run build-css && node makepdf.js",
     "build-css": "stylus -u ./node_modules/nib -o public/css/ styles",
     "watch": "stylus -w -u ./node_modules/nib -o public/css/ styles",
+    "predeploy": "npm run build",
     "deploy": "surge -p ./public -d activeobject.me"
   },
   "devDependencies": {
